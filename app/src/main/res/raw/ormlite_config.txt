@@ -1,0 +1,187 @@
+#
+# generated on 2015/07/06 05:45:51
+#
+# --table-start--
+dataClass=com.uni.unidasher.data.datamodel.databaseAndApi.ShoppingBasket
+tableName=ShoppingBasketTable
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=uid
+id=true
+unique=true
+indexName=ShoppingBasketTable_uid_idx
+# --field-end--
+# --field-start--
+fieldName=sendAddress
+columnName=sendAddress
+# --field-end--
+# --field-start--
+fieldName=shopInfo
+columnName=shopInfoId
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=dishInfoForeignCollection
+columnName=dishInfos
+foreignCollection=true
+foreignCollectionEager=true
+foreignCollectionColumnName=dishInfos
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.uni.unidasher.data.datamodel.databaseAndApi.DishInfo
+tableName=DishInfoTable
+# --table-fields-start--
+# --field-start--
+fieldName=dishId
+columnName=id
+id=true
+unique=true
+indexName=DishInfoTable_id_idx
+# --field-end--
+# --field-start--
+fieldName=sid
+columnName=sid
+# --field-end--
+# --field-start--
+fieldName=dishName
+columnName=dishName
+# --field-end--
+# --field-start--
+fieldName=price
+columnName=price
+# --field-end--
+# --field-start--
+fieldName=typeId
+columnName=typeId
+# --field-end--
+# --field-start--
+fieldName=typeName
+columnName=typeName
+# --field-end--
+# --field-start--
+fieldName=taste
+columnName=taste
+# --field-end--
+# --field-start--
+fieldName=description
+columnName=description
+# --field-end--
+# --field-start--
+fieldName=count
+columnName=count
+# --field-end--
+# --field-start--
+fieldName=shoppingBasket
+columnName=shoppingBasket
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.uni.unidasher.data.datamodel.databaseAndApi.ShopInfo
+tableName=ShopInfoTable
+# --table-fields-start--
+# --field-start--
+fieldName=userId
+columnName=id
+id=true
+unique=true
+indexName=ShopInfoTable_id_idx
+# --field-end--
+# --field-start--
+fieldName=sid
+columnName=sid
+# --field-end--
+# --field-start--
+fieldName=name
+columnName=name
+# --field-end--
+# --field-start--
+fieldName=logo
+columnName=logo
+# --field-end--
+# --field-start--
+fieldName=serviceTimes
+columnName=serviceTimes
+# --field-end--
+# --field-start--
+fieldName=typeTab
+columnName=typeTab
+# --field-end--
+# --field-start--
+fieldName=goodEvaluate
+columnName=goodEvaluate
+# --field-end--
+# --field-start--
+fieldName=badEvaluate
+columnName=badEvaluate
+# --field-end--
+# --field-start--
+fieldName=phone
+columnName=phone
+# --field-end--
+# --field-start--
+fieldName=email
+columnName=email
+# --field-end--
+# --field-start--
+fieldName=address
+columnName=address
+# --field-end--
+# --field-start--
+fieldName=subscribe
+columnName=subscribe
+# --field-end--
+# --field-start--
+fieldName=latitude
+columnName=latitude
+# --field-end--
+# --field-start--
+fieldName=longitude
+columnName=longitude
+# --field-end--
+# --field-start--
+fieldName=openService
+columnName=openService
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.uni.unidasher.data.datamodel.databaseAndApi.UserAdressInfo
+tableName=PlaceOrderUserInfoTable
+# --table-fields-start--
+# --field-start--
+fieldName=userId
+columnName=id
+id=true
+unique=true
+indexName=PlaceOrderUserInfoTable_id_idx
+# --field-end--
+# --field-start--
+fieldName=userName
+columnName=userName
+# --field-end--
+# --field-start--
+fieldName=address
+columnName=address
+# --field-end--
+# --field-start--
+fieldName=latitude
+columnName=latitude
+# --field-end--
+# --field-start--
+fieldName=longitude
+columnName=longitude
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

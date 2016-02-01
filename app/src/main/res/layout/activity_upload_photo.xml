@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context="com.uni.unidasher.ui.activity.UploadPhotoActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widget_margin_24"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgvLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/user_pic_default"
+            app:border_width="2dp"
+            app:border_color="@color/white"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请上传您的头像"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/mainTextColor"
+        android:layout_marginBottom="@dimen/widget_margin_24"
+        />
+    <TextView
+        android:id="@+id/txtvNext"
+        style="@style/WidgetButtonCyan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/widget_margin_32"
+        />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.uni.unidasher.ui.fragment.SendValidateInfo">
+    <include layout="@layout/actionbar"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/widget_margin_32"
+        android:paddingRight="@dimen/widget_margin_32"
+        android:layout_marginTop="@dimen/widget_margin_20"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgvLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/user_pic_default"
+            app:border_width="2dp"
+            app:border_color="@color/white"
+            />
+        <TextView
+            android:id="@+id/txtvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/mainTextColor"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/widget_margin_32"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/secondTextColor"
+            />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin_8"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡号"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/secondTextColor"
+            android:layout_marginTop="@dimen/widget_margin_10"
+            />
+
+        <EditText
+            android:id="@+id/etBankNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin_8"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡类型描述"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/secondTextColor"
+            android:layout_marginTop="@dimen/widget_margin_10"
+            />
+
+        <EditText
+            android:id="@+id/etBankDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_margin_8"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:id="@+id/txtvSubmit"
+            style="@style/WidgetButtonCyan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/widget_margin_32"
+            android:text="提交"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

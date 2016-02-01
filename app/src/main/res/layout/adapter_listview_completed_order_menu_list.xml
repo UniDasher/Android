@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="@dimen/widget_margin_12"
+    android:paddingBottom="@dimen/widget_margin_12"
+    android:paddingLeft="@dimen/widget_margin_8"
+    android:paddingRight="@dimen/widget_margin_8"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:id="@+id/txtvDishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/text_size_16"
+        android:text="脆皮鸡肉堡"
+        android:textColor="@color/mainTextColor"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/secondTextColor"
+        android:layout_marginLeft="@dimen/widget_margin_8"
+        />
+
+    <TextView
+        android:id="@+id/txtvDishPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/secondTextColor"
+        android:layout_marginRight="@dimen/widget_margin_4"
+        android:ems="2"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/secondTextColor"
+        android:layout_marginRight="@dimen/widget_margin_4"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/txtvDishCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/mainTextColor"
+        android:layout_marginLeft="@dimen/widget_margin_8"
+        android:layout_marginRight="@dimen/widget_margin_4"
+        android:ems="2"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondTextColor"
+        android:text="/份"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginRight="@dimen/widget_margin_8"
+        />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0" android:drawable="@mipmap/direction_e" /> <!--正东-->
+    <item android:maxLevel="1" android:drawable="@mipmap/direction_s" /><!--正南-->
+    <item android:maxLevel="2" android:drawable="@mipmap/direction_w" /><!--正西-->
+    <item android:maxLevel="3" android:drawable="@mipmap/direction_n" /><!--正北-->
+    <item android:maxLevel="4" android:drawable="@mipmap/direction_e_s" /><!--东南-->
+    <item android:maxLevel="2" android:drawable="@mipmap/direction_w_s" /><!--西南-->
+    <item android:maxLevel="3" android:drawable="@mipmap/direction_w_n" /><!--西北-->
+    <item android:maxLevel="4" android:drawable="@mipmap/direction_e_n" /><!--东北-->
+</level-list>

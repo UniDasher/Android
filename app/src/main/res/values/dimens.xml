@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="widget_margin_4">4dp</dimen>
+    <dimen name="widget_margin_8">8dp</dimen>
+    <dimen name="widget_margin_10">10dp</dimen>
+    <dimen name="widget_margin_12">12dp</dimen>
+    <dimen name="widget_margin_14">14dp</dimen>
+    <dimen name="widget_margin_16">16dp</dimen>
+    <dimen name="widget_margin_20">20dp</dimen>
+    <dimen name="widget_margin_24">24dp</dimen>
+    <dimen name="widget_margin_28">28dp</dimen>
+    <dimen name="widget_margin_32">32dp</dimen>
+    <dimen name="widget_margin_40">40dp</dimen>
+    <dimen name="widget_margin_50">50dp</dimen>
+    <dimen name="widget_margin_64">64dp</dimen>
+    <dimen name="widget_margin_80">80dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_36">36sp</dimen>
+    <dimen name="text_size_46">46sp</dimen>
+    <dimen name="text_size_60">60sp</dimen>
+
+
+    <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+
+    <dimen name="action_bar_height">48dp</dimen>
+
+    <dimen name="head_normal">50dp</dimen>
+
+</resources>

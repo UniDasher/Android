@@ -1,0 +1,43 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/red"
+    >
+    <TextView
+        android:id="@+id/txtvBack"
+        android:layout_width="wrap_content"
+        android:minWidth="50dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/back"
+        android:paddingLeft="@dimen/widget_margin_8"
+        android:drawablePadding="@dimen/widget_margin_16"
+        android:layout_marginLeft="@dimen/widget_margin_8"
+        android:textSize="@dimen/text_size_18"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/txtvNavTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"
+        />
+
+    <ImageView
+        android:id="@+id/imgvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/widget_margin_12"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

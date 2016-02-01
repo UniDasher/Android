@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/widget_margin_10"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderName"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_10"
+            />
+        <com.uni.unidasher.ui.widget.ClearEditText
+            android:id="@+id/editOrderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/callPhoneNum"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+        <com.uni.unidasher.ui.widget.ClearEditText
+            android:id="@+id/editCallPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendAddress"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+        <com.uni.unidasher.ui.widget.ClearEditText
+            android:id="@+id/editSendAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:textColor="@color/mainTextColor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wantSendTime"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/widget_margin_4"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30"
+                    android:textSize="@dimen/text_size_16"
+                    android:textColor="@color/mainTextColor"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="----"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_margin="@dimen/widget_margin_4"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30"
+                    android:textSize="@dimen/text_size_16"
+                    android:textColor="@color/mainTextColor"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtvTimeEdit"
+                style="@style/WidgetButtonCyan"
+                android:text="@string/edit"
+                android:textSize="@dimen/text_size_14"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtvConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/WidgetButtonCyan"
+        android:text="@string/confirm"
+        android:layout_margin="@dimen/widget_margin_10"
+        />
+</LinearLayout>

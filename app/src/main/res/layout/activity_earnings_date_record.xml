@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uni.unidasher.ui.activity.EarningsDateRecordActivity"
+    >
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/txtvEarn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收益"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:paddingTop="@dimen/widget_margin_10"
+            android:paddingBottom="@dimen/widget_margin_10"
+            android:background="@drawable/second_tab_bg_orange"
+            android:textColor="@drawable/text_gray_orange_click"
+            android:clickable="true"
+            android:onClick="onTabClicked"
+            />
+        <TextView
+            android:id="@+id/txtvOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="转出"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:paddingTop="@dimen/widget_margin_10"
+            android:paddingBottom="@dimen/widget_margin_10"
+            android:background="@drawable/second_tab_bg_orange"
+            android:textColor="@drawable/text_gray_orange_click"
+            android:clickable="true"
+            android:onClick="onTabClicked"
+            />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

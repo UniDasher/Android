@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uni.unidasher.ui.activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_item_bg"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/textNearby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/tab_near"
+            android:text="@string/nearby"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@drawable/tab_item_text"/>
+
+        <TextView
+            android:id="@+id/textOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/tab_order"
+            android:text="@string/order"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@drawable/tab_item_text"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/textChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:drawableTop="@drawable/tab_chat"
+                android:text="@string/chat"
+                android:gravity="center_horizontal"
+                android:drawablePadding="3dp"
+                android:onClick="onTabClicked"
+                android:textColor="@drawable/tab_item_text"/>
+            <ImageView
+                android:id="@+id/imgvUnReadChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/unread_chat"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/widget_margin_12"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textShoppingBasket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/tab_shopbasket"
+            android:text="@string/shoppingbasket"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@drawable/tab_item_text"/>
+
+
+
+        <TextView
+            android:id="@+id/textAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:drawableTop="@drawable/tab_account"
+            android:text="@string/account"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:onClick="onTabClicked"
+            android:textColor="@drawable/tab_item_text"/>
+
+    </LinearLayout>
+</LinearLayout>
+

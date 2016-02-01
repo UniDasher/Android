@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/white"
+        android:text="@string/wantSendTime"
+        android:background="@color/mainTextColor"
+        android:padding="@dimen/widget_margin_10"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="@dimen/widget_margin_16"
+        android:gravity="center_vertical"
+        >
+        <com.uni.unidasher.ui.widget.wheel.WheelView
+            android:id="@+id/wheelStart"
+            android:layout_height="210dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:background="@color/secondTextColor"
+            android:layout_marginLeft="@dimen/widget_margin_10"
+            android:layout_marginRight="2dp"
+            ></View>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:background="@color/secondTextColor"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="@dimen/widget_margin_10"
+            ></View>
+        <com.uni.unidasher.ui.widget.wheel.WheelView
+            android:id="@+id/wheelEnd"
+            android:layout_height="210dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <com.uni.wheelpickerlibrary.view.WheelHorizontalView
+        android:id="@+id/wheelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="@dimen/widget_margin_16"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            style="@style/WidgetButtonCyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancle"
+            android:layout_marginRight="@dimen/widget_margin_8"
+
+            />
+        <TextView
+            style="@style/WidgetButtonCyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            android:layout_marginLeft="@dimen/widget_margin_8"
+            />
+    </LinearLayout>
+
+</LinearLayout>

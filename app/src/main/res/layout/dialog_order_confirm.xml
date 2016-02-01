@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/alert_navbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/widget_margin_10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderName"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            />
+        <EditText
+            android:id="@+id/editOrderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/callPhoneNum"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+        <EditText
+            android:id="@+id/editCallPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendAddress"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+        <EditText
+            android:id="@+id/editSendAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin_4"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/login_edittext_bg"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wantSendTime"
+            android:textColor="@color/secondTextColor"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="@dimen/widget_margin_12"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/widget_margin_4"
+            >
+            <com.uni.wheelpickerlibrary.view.WheelHorizontalView
+                android:id="@+id/wheelTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtvConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/WidgetButtonCyan"
+            android:text="@string/confirm"
+            android:layout_marginTop="@dimen/widget_margin_16"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

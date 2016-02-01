@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/actionbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F0F3F6"
+            android:padding="@dimen/widget_margin_10"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/widget_margin_10"
+                >
+                <TextView
+                    android:id="@+id/txtvChangeIdentity"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountChangeIndentity"
+                    android:background="@drawable/single_corners_selector"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/widget_margin_16"
+                >
+                <TextView
+                    android:id="@+id/txtvOrderHistory"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountOrderHistroy"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/top_corners_bg"
+                    />
+                <View style="@style/view_line"/>
+                <TextView
+                    android:id="@+id/txtvSendOrderHistory"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountSendOrderHistroy"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/none_corners_bg"
+                    />
+                <View style="@style/view_line"/>
+                <TextView
+                    android:id="@+id/txtvEarnHistory"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountEarnHistroy"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/bottom_corners_bg"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/widget_margin_16"
+                >
+
+                <TextView
+                    android:id="@+id/txtvSendValidate"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountSendValidate"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/top_corners_bg"
+                    />
+                <View style="@style/view_line"/>
+                <TextView
+                    android:id="@+id/txtvAccountInfo"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountInfo"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/none_corners_bg"
+                    />
+                <View style="@style/view_line"/>
+                <TextView
+                    android:id="@+id/txtvChangePwd"
+                    style="@style/Account_TextView"
+                    android:text="@string/accountChangePwd"
+                    android:drawableRight="@mipmap/setting_arrow"
+                    android:background="@drawable/bottom_corners_bg"
+                    />
+            </LinearLayout>
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/btnExit"
+                style="@style/Account_TextView"
+                android:text="@string/accountExit"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/text_size_18"
+                flatui:fl_touchEffect="fl_ripple"
+                flatui:fl_theme="@array/custom_theme_red"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

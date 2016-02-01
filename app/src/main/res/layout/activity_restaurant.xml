@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uni.unidasher.ui.activity.restaurant.RestaurantActivity">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/txtvOrderFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18"
+            android:text="@string/dianCan"
+            android:gravity="center"
+            android:padding="@dimen/widget_margin_8"
+            android:background="@drawable/second_tab_bg_orange"
+            android:textColor="@drawable/text_gray_orange_click"
+            android:clickable="true"
+            android:onClick="onTabClicked"
+            />
+        <TextView
+            android:id="@+id/txtvIntroduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_18"
+            android:text="@string/introduction"
+            android:gravity="center"
+            android:padding="@dimen/widget_margin_8"
+            android:background="@drawable/second_tab_bg_orange"
+            android:textColor="@drawable/text_gray_orange_click"
+            android:clickable="true"
+            android:onClick="onTabClicked"
+            />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        ></FrameLayout>
+
+</LinearLayout>

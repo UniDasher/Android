@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.uni.unidasher.ui.widget.CustomDrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                >
+                <ListView
+                    android:id="@+id/listvMenuType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/lightGrayBg"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    ></ListView>
+            </LinearLayout>
+
+        </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/right_drawer_layout"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"
+                >
+                <ListView
+                    android:id="@+id/listvMenuContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:dividerHeight="1dp"
+                    android:divider="@color/lightGrayBg"
+                    ></ListView>
+            </RelativeLayout>
+
+        </com.uni.unidasher.ui.widget.CustomDrawerLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/secondTextColor"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/widget_margin_8"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/widget_margin_10"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/shoppingbasket"
+                        />
+                    <TextView
+                        android:id="@+id/txtvTotalCount"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/unread_count_bg"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/red"
+                    android:text="￥"
+                    />
+
+                <TextView
+                    android:id="@+id/txtvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_18"
+                    android:textColor="@color/red"
+                    android:text="123"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    ></View>
+
+                <TextView
+                    android:id="@+id/txtvTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stop_service_txt"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/widget_margin_12"
+                    android:paddingRight="@dimen/widget_margin_12"
+                    android:gravity="right"
+                    android:textColor="@color/secondTextColor"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/txtvPlaceOrder"
+                    style="@style/WidgetButtonCyan"
+                    android:text="@string/xianDan"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/widget_margin_28"
+                    android:paddingRight="@dimen/widget_margin_28"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+

@@ -1,0 +1,8 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--已下单-->
+    <item android:maxLevel="0" android:drawable="@mipmap/order_status_default" />
+    <!--已接单-->
+    <item android:maxLevel="1" android:drawable="@mipmap/order_status_default" />
+    <!--已超时-->
+    <item android:maxLevel="2" android:drawable="@mipmap/order_status_timeout" />
+</level-list>

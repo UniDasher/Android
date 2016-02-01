@@ -1,0 +1,18 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/txtvMenuType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mainTextColor"
+        android:textSize="@dimen/text_size_16"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/widget_margin_10"
+        android:layout_marginBottom="@dimen/widget_margin_10"
+        android:layout_marginLeft="@dimen/widget_margin_10"
+        />
+</LinearLayout>

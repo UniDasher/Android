@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin_10"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderNum"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/mainTextColor"
+            />
+
+        <TextView
+            android:id="@+id/txtvOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginLeft="@dimen/widget_margin_8"
+            android:textColor="@color/mainTextColor"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtvShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginTop="@dimen/widget_margin_8"
+        android:textColor="@color/secondLightOrange"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrayBg"
+        android:layout_marginTop="@dimen/widget_margin_4"
+        android:layout_marginBottom="@dimen/widget_margin_4"
+        ></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgvUserHead"
+                android:layout_width="@dimen/head_normal"
+                android:layout_height="@dimen/head_normal"
+                android:src="@mipmap/user_pic_default"
+                android:layout_marginRight="@dimen/widget_margin_10"
+                />
+            <TextView
+                android:id="@+id/txtvUnReadCount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/unread_count_bg"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/widget_margin_8"
+            >
+            <TextView
+                android:id="@+id/txtvChatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/secondTextColor"
+                />
+            <TextView
+                android:id="@+id/txtvLastMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/secondTextColor"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

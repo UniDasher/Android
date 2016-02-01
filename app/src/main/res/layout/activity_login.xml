@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context=".ui.activity.LoginActivity"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin_32"
+    android:background="@color/white"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        style="@style/Widget.TextView.Base.Second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginAccount"
+        android:textSize="@dimen/text_size_18"
+        android:layout_marginTop="@dimen/widget_margin_8"
+        />
+    <EditText
+        android:id="@+id/editAccount"
+        style="@style/Widget.EditText.Base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        />
+    <TextView
+        style="@style/Widget.TextView.Base.Second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginPwd"
+        android:layout_marginTop="@dimen/widget_margin_10"
+        android:textSize="@dimen/text_size_18"
+        />
+    <EditText
+        android:id="@+id/editPwd"
+        style="@style/Widget.EditText.Base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:id="@+id/txtvForgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fogetPwd"
+        android:layout_marginTop="@dimen/widget_margin_8"
+        android:layout_gravity="right"
+        android:textColor="@color/btn_login_normal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/widget_margin_20"
+        >
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loginBtnText"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            flatui:fl_touchEffect="fl_ripple"
+            flatui:fl_blockButtonEffectHeight="0dp"
+            flatui:fl_theme="@array/custom_theme_red"
+            />
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registerBtnText"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/widget_margin_10"
+            flatui:fl_touchEffect="fl_ripple"
+            flatui:fl_theme="@array/custom_theme_red"
+            flatui:fl_blockButtonEffectHeight="0dp"
+            />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></View>
+        <com.cengalabs.flatui.views.FlatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wxLoginText"
+            android:textSize="@dimen/text_size_18"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/widget_margin_10"
+            flatui:fl_touchEffect="fl_ripple"
+            flatui:fl_blockButtonEffectHeight="0dp"
+            android:layout_gravity="bottom"
+            flatui:fl_theme="@array/custom_theme_cyan"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_grey">#ccc</color>
+    <color name="grey">#333</color>
+    <color name="white">#fff</color>
+    <color name="blue">#419DE4</color>
+    <color name="red">#e7290f</color>
+    <color name="dark_grey">#575757</color>
+
+    <!--主要文字 主要分割线-->
+    <color name="mainTextColor">#575757</color>
+
+    <!--次要文字、次要分割线-->
+    <color name="secondTextColor">#afacac</color>
+    <color name="secondTextColor1">#99a3a0a0</color>
+    <!--浅色背景 极浅灰-->
+    <color name="lightGrayBg">#f1f2f4</color>
+
+    <color name="secondLightOrange">#eda35a</color>
+
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+
+
+    <!--青色主题 按钮-->
+    <color name="cyan_darker_color">#306009</color>
+    <color name="cyan_dark_color">#407a12</color>
+    <color name="cyan_primary_color">#569722</color>
+    <color name="cyan_light_color">#72ad43</color>
+    <integer-array name="custom_theme_cyan">
+        <item>@color/cyan_darker_color</item>
+        <item>@color/cyan_dark_color</item>
+        <item>@color/cyan_primary_color</item>
+        <item>@color/cyan_light_color</item>
+    </integer-array>
+
+    <color name="red_darker_color">#8f1605</color>
+    <color name="red_dark_color">#ac1905</color>
+    <color name="red_primary_color">#d91f06</color>
+    <color name="red_light_color">#e7290f</color>
+    <integer-array name="custom_theme_red">
+        <item>@color/red_darker_color</item>
+        <item>@color/red_dark_color</item>
+        <item>@color/red_primary_color</item>
+        <item>@color/red_light_color</item>
+    </integer-array>
+
+
+
+
+</resources>

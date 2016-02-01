@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/alert_navbar"></include>
+
+    <TextView
+        android:id="@+id/txtvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/mainTextColor"
+        android:padding="@dimen/widget_margin_10"
+        android:layout_margin="@dimen/widget_margin_10"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+
